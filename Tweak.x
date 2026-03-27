@@ -50,10 +50,12 @@ NSBundle *TweakBundle() {
         tweaks = [NSMutableArray new];
         [tweaks addObjectsFromArray:@[
             @(404), // YTABConfig
-            @(YTIcons), // YTIcons
-            @(YTweaks), // YTweaks
+            @(YTIcons),
+            @(YTAppVersionSpoofer),
+            @(YTClassicDarkTheme),
             @(2002), // Gonerino
-            @(YTFlags), // YTFlags
+            @(YTFlags),
+            @(YTweaks),
             @(500), // uYou+,
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
@@ -62,9 +64,7 @@ NSBundle *TweakBundle() {
             @(200), // YouPiP
             @(YouSlider),
             @(2168), // YTHoldForSpeed
-            @(1222), // YTVideoOverlay
-            @(YTAppVersionSpoofer),
-            @(YTClassicDarkTheme)
+            @(1222) // YTVideoOverlay
         ]];
     });
     return tweaks;
