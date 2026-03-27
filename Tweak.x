@@ -15,6 +15,7 @@ static const NSInteger YTUHD = 'ythd';
 static const NSInteger YouSlider = 'ytsl';
 static const NSInteger YTweaks = 'ytwk';
 static const NSInteger YTFlags = 'ytfl';
+static const NSInteger YTAppVersionSpoofer = 'yavs';
 static const NSInteger YTClassicDarkTheme = 'ycdt';
 
 NSBundle *TweakBundle() {
@@ -62,6 +63,7 @@ NSBundle *TweakBundle() {
             @(YouSlider),
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
+            @(YTAppVersionSpoofer),
             @(YTClassicDarkTheme)
         ]];
     });
