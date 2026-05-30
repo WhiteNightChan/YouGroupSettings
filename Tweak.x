@@ -49,14 +49,17 @@ NSBundle *TweakBundle() {
     dispatch_once(&onceToken, ^{
         tweaks = [NSMutableArray new];
         [tweaks addObjectsFromArray:@[
+            /* Configuration */
             @(404), // YTABConfig
-            @(YTIcons), // YTIcons
-            @(YTweaks), // YTweaks
-            @(VolumeBoostYT), // VolumeBoostYT
+            @(YTFlags),
+            @(YTIcons),
+            /* QoL */
             @(2002), // Gonerino
-            @(YTFlags), // YTFlags
-            @(YouMod), // YouMod
+            @(YTweaks),
+            /* Tweak Pack */
             @(500), // uYou+,
+            @(YouMod),
+            /* Video Player */
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
             @(YTUHD),
@@ -65,6 +68,7 @@ NSBundle *TweakBundle() {
             @(YouSlider),
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
+            @(VolumeBoostYT)
         ]];
     });
     return tweaks;
