@@ -17,6 +17,8 @@ static const NSInteger YTweaks = 'ytwk';
 static const NSInteger YTFlags = 'ytfl';
 static const NSInteger VolumeBoostYT = 'ndyt';
 static const NSInteger YouMod = 'ytmo';
+static const NSInteger YTAppVersionSpoofer = 'yavs';
+static const NSInteger YTClassicDarkTheme = 'ycdt';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -54,6 +56,8 @@ NSBundle *TweakBundle() {
             @(YTFlags),
             @(YTIcons),
             /* QoL */
+            @(YTAppVersionSpoofer),
+            @(YTClassicDarkTheme),
             @(2002), // Gonerino
             @(YTweaks),
             /* Tweak Pack */
